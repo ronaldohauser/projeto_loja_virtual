@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC Shoes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>EBAC Shoes</h1>
+        <nav>
+            <button onclick="scrollToSection('sobre')">Sobre a loja</button>
+            <button onclick="scrollToSection('produtos')">Produtos</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="sobre-section">
+            <div class="sobre-imagem">
+                <img src="loja.jpg" alt="Imagem da loja">
+            </div>
+            <div class="sobre-conteudo">
+                <h2 class="titulo-secao">Sobre a Loja</h2>
+                <p>
+                    Bem-vindo à nossa exclusiva loja de calçados! Aqui, oferecemos uma seleção cuidadosa para atender todos os estilos e ocasiões. Trabalhamos com marcas renomadas internacionalmente, garantindo durabilidade e conforto.
+                    Nossa equipe experiente está pronta para ajudar a encontrar o par ideal, seja para eventos especiais ou dias casuais. Acreditamos na diversidade de tamanhos e modelos para todos os pés.
+                    Explore nosso universo de elegância e inovação. Cada par conta uma história, e mal podemos esperar para fazer parte da sua jornada! Moda, conforto e qualidade se unem em nossa loja. Esperamos vê-lo em breve, pronto para caminhar com confiança a cada passo.
+                </p>
+            </div>
+        </section>
+
+        <section id="produtos" class="produtos-section">
+            <h2 class="titulo-secao">Produtos</h2>
+            <div class="grid-produtos">
+                <div class="product">
+                    <img src="produto1.jpg" alt="Produto 1">
+                    <h3>Adidas Grand Court 2.0 Feminino</h3>
+                    <p>
+                        Disponível nos tamanhos 39. 40, 42 e 44.
+                    </p>
+                    <button>Adicionar ao carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="produto2.jpg" alt="Produto 2">
+                    <h3>Nike Renew Ride 3 Feminino</h3>
+                    <p>
+                        Disponível nos tamanhos 37, 38 e 39.
+                    </p>
+                    <button>Adicionar ao carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="produto3.jpg" alt="Produto 3">
+                    <h3>Hoka One Speedgoat 5 Masculino</h3>
+                    <p>
+                        Disponível nos tamanhos 39. 40, 42 e 44.
+                    </p>
+                    <button>Adicionar ao carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="produto4.jpg" alt="Produto 4">
+                    <h3>Puma Softride Enzo Masculino</h3>
+                    <p>
+                        Disponível nos tamanhos 39. 40, 42 e 44.
+                    </p>
+                    <button>Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+
+</html>
