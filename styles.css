@@ -1,3 +1,8 @@
+:root {
+    --cor-primaria: #3c64d4;
+    --cor-texto: #fff;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,8 +10,8 @@ body {
 }
 
 header {
-    background-color: #3c64d4;
-    color: #fff;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -20,8 +25,8 @@ header h1 {
 }
 
 nav button {
-    background-color: #3c64d4;
-    color: #fff;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
     border: none;
     padding: 8px 12px;
     margin-left: 10px;
@@ -55,17 +60,17 @@ main {
 }
 
 .titulo-secao {
-    border-bottom: 2px solid #3c64d4;
+    border-bottom: 2px solid var(--cor-primaria);
     display: inline-block;
     padding-bottom: 5px;
-    color: #3c64d4;
+    color: var(--cor-primaria);
     font-style: italic;
     width: 100%;
 }
 
 .divisor {
     margin: 20px 0;
-    border-bottom: 2px solid #3c64d4;
+    border-bottom: 2px solid var(--cor-primaria);
 }
 
 .produtos-section {
@@ -74,13 +79,13 @@ main {
 
 .produtos-section .titulo-secao {
     text-align: left;
-    color: #3c64d4;
+    color: var(--cor-primaria);
     font-style: italic;
 }
 
 .produtos-section .divisor {
     margin: 20px 0;
-    border-bottom: 2px solid #3c64d4;
+    border-bottom: 2px solid var(--cor-primaria);
 }
 
 .grid-produtos {
@@ -104,8 +109,8 @@ main {
 }
 
 .product button {
-    background-color: #3c64d4;
-    color: #fff;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
     border: none;
     padding: 8px 12px;
     margin-top: auto;
@@ -139,5 +144,3 @@ main {
         grid-template-columns: 1fr;
     }
 }
-
-
